@@ -1,0 +1,274 @@
+/****************************************************/
+/********* 		PRESET	   **************************/
+/****************************************************/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	font-family: Arial, Consolas, Calibri, sans-serif;
+	font-size: 16px;
+}
+
+/****************************************************/
+/********* 		CABECALHO 	  ***********************/
+/****************************************************/
+header {
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px 100px 50px;
+}
+
+header nav {
+	padding-bottom: 20px;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li:first-child {
+	border-right: 1px solid #000;
+}
+
+header nav ul li {
+	display: inline;
+	font-weight: bold;
+}
+
+header nav ul li a {
+	padding: 0 10px;
+	color: rgb(13, 134, 255);
+}
+
+header h1 {
+	text-align: center;
+	font-size: 4em;
+	letter-spacing: 2px;
+	color: orange;
+}
+
+header h2 {
+	padding-right: 98px;
+	text-align: right;
+	font-size: 2em;
+	color: rgb(197, 10, 56);
+}
+
+/****************************************************/
+/********* 		PRINCIPAL 	  ***********************/
+/****************************************************/
+main section {
+	padding: 30px 20px;
+}
+
+main section > * {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.laranja {
+	background-color: rgb(243, 128, 71);
+}
+
+main section h3 {
+	padding: 5px  0;
+	text-align: center;
+	font-size: 1.5em;
+	color: rgb(10, 111, 192);
+}
+
+#perfil h3 {
+	border-bottom: 3px solid green;
+}
+
+#produtos h3 {
+	border-bottom: 3px solid #000;
+}
+
+main article {
+	padding: 30px 0 50px;
+	display: flex;
+}
+
+main figure.perfil {
+	text-align: center;
+	font-weight: bold;
+	flex: 1 25%;
+}
+
+#perfil figure img {
+	display: inline-block;
+	width: 100%;
+}
+
+#produtos figure img {
+	display: inline-block;
+	width: 100%;
+}
+
+#perfil article p {
+	padding-left: 50px;
+	text-align: right;
+	font-size: 1.3em;
+	flex: 1 100%;
+}
+
+#produtos p {
+	margin: 0 80px;
+	text-align: center;
+	font-size: 1.3em;
+	flex-basis: 150%;
+	color: rgb(45, 187, 9);
+}
+
+/****************************************************/
+/********* 		PERFIL	 	  ***********************/
+/****************************************************/
+main .container {
+	padding: 50px 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+main .caixa {
+	background-color: #fff;
+	border: 2px solid black;
+	padding: 20px 0;
+	width: 30%;
+	text-align: center;
+}
+
+.caixa figure {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.caixa p {
+	width: 70%;
+	margin: 20px auto;
+	font-size: 1em;
+}
+
+.caixa button, .caixa a {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 160px;
+	border: 1px solid #000;
+	padding: 3px 10px;
+	font: 400 13.3333px Arial;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.caixa .azul {
+	background-color: #4c78bb;
+	color: white;
+	box-shadow: 3px 3px #333;
+}
+
+.caixa .verde {
+	background-color: #43d54d;
+	color: white;
+	box-shadow: 3px 3px #333;
+}
+
+.caixa .beje {
+	background-color: #ed8552;
+	box-shadow: 3px 3px #333;
+}
+
+#conteudo-perfil article {
+	display: block;
+}
+
+#conteudo-perfil #amigos {
+	color: #4c78bb;
+}
+
+#conteudo-perfil #fotos {
+	color: #43d54d;
+}
+
+#conteudo-perfil #celulares {
+	color: #ed8552;
+}
+
+#amigos div, #fotos div, #celulares div {
+	display: flex;
+	padding-top: 20px;
+}
+
+#conteudo-perfil h4 {
+	padding-left: 20px;
+	font-size: 1.6em;
+	border-bottom: 3px solid black;
+	padding-bottom: 10px;
+}
+
+#conteudo-perfil figure {
+	width: 50%;
+	color: black;
+	text-align: center;
+}
+
+#conteudo-perfil figure img {
+
+	width: 100%;
+}
+
+#conteudo-perfil p {
+	padding: 30px 0 0 30px;
+}
+
+/****************************************************/
+/********* 		RODAPE	 	  ***********************/
+/****************************************************/
+footer {
+	padding: 50px 100px;
+	display: flex;
+}
+
+footer > * {
+	margin: 0 auto;
+	width: 80%;
+}
+
+footer #sobre {
+	flex: 1 100%;
+}
+
+footer #endereco, footer #telefone {
+	flex: 1 80%;
+}
+
+footer #endereco span, #telefone span {
+	display: block;
+}
+
+footer h4 {
+	padding-bottom: 10px;
+	color: #4d4ba6;
+	font-weight: bold;
+	font-size: 1.6em;
+	border-bottom: 3px solid black;
+}
+
+footer div address, footer div div, footer div p {
+	padding-top: 40px;
+} 
+
+#telefone > *, #sobre > * {
+	padding-left: 40px;
+	border-left: 3px solid black;
+}
+
+#telefone div, #sobre p {
+	height: 300px;
+}
+
+#conteudo p {
+	flex-basis: 300px;
+}

@@ -1,7 +1,7 @@
-let $doc = $('html, body');
-$('a').click(function () {
+const $doc = $('html, body')
+$('a').click(e => {
 	$doc.animate({
-		scrollTop: $($.attr(this, 'href')).offset().top
-	}, 500);
-	return false;
-});
+		scrollTop: $($.attr(e.target, 'href')).offset().top
+	}, 500)
+	return false
+})
